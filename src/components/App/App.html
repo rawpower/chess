@@ -1,0 +1,13 @@
+<div class="App">
+  <div class="Board">
+    <div v-for="rank in squares" class="Rank">
+      <div v-for="square in rank" class="Square">
+        <div class="Piece" v-if="square.piece" :class="square.piece.color"></div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <button @click="movePiece">MOVE</button>
+  </div>
+</div>

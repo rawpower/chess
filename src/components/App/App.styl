@@ -1,0 +1,58 @@
+.App {
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100%
+}
+
+
+.Board {
+  display: flex
+  flex-direction: column
+  width: 400px
+  height: 400px
+  display: flex
+  background: pink
+  border 15px solid brown
+}
+
+.Rank {
+  display: flex
+  flex: 1
+  width: 100%
+  background: #333
+
+  &:nth-child(odd) {
+    .Square:nth-child(odd) {
+      background: #ccc
+    }
+  }
+
+  &:nth-child(even) {
+    .Square:nth-child(even) {
+      background: #ccc
+    }
+  } 
+}
+
+.Square {
+  display: flex
+  justify-content: center
+  align-items: center
+  flex: 1
+}
+
+.Piece {
+  width: 50%
+  height: 50%
+
+  &.white {
+    background: #fff
+    border: 1px solid #333
+  }
+
+  &.black {
+    background: #222
+    border: 1px solid #ccc
+  }
+}
